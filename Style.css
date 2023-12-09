@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Comfortaa:wght@300&family=Kalam&family=Raleway:wght@100&display=swap");
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  color: whitesmoke;
+}
+
+/* Container and header */
+
+.container {
+  background-color: rgb(71, 181, 249);
+  width: 100%;
+  height: auto;
+  padding: 2% 12%;
+}
+.container .header {
+  display: inline-block;
+  width: 100%;
+  /* height: 100px; */
+}
+.container .header .navbar {
+  display: flex;
+  text-align: center;
+  gap: 38px;
+}
+.container .header .navbar img {
+  margin-left: 83px;
+  margin-right: 200px;
+}
+.container .header a {
+  text-align: center;
+  margin-top: 24px;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.11rem;
+  font-weight: 600;
+  text-align: center;
+  text-wrap: nowrap;
+}
+.container .header a:hover {
+  color: black;
+  padding: 1px;
+}
+
+/* Content  */
+
+.container .content {
+  width: 100%;
+  padding: 3% 0%;
+  display: flex;
+  flex-direction:row;
+  column-gap: 90px;
+}
+.container .content .part_1 {
+  width: 100%;
+  padding: 1%;
+}
+.container .content .part_1 h1 q {
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 55px;
+  font-weight: 600;
+  text-shadow: 2px 3px 0px black;
+}
+.container .content .part_1 p {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(18, 18, 18, 0.8);
+  letter-spacing: 0.1rem;
+  text-align: justify;
+  line-height: 1.2rem;
+  margin-top: 10px;
+}
+.container .content .part_1 button {
+  color: black;
+  padding: 3% 4%;
+  margin-top: 23px;
+  width: 40%;
+  margin-right: 30px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+#signup {
+  border: 1px solid black;
+  background-color: rgb(2, 2, 2);
+  color: rgb(255, 255, 255);
+}
+#login {
+  background-color: rgb(255, 255, 255);
+  color: rgb(13, 13, 13);
+}
+
+/* Image */
+
+.container .content .part_2 {
+  width: 100%;
+}
+.container .content .part_2 img {
+  filter: blur(1px);
+  border-radius: 120%;
+  width: 110%;
+  height: 510px;
+  box-shadow: 4px 2px 12px rgb(0, 217, 255);
+   /* border-bottom-left-radius: 120px; */
+  /* border-top-left-radius: 10px;
+  border-left:2px solid black;
+  border-top:2px solid black;  */
+}
+
+/* Responsive  */
+@media screen and ( max-width:820px) {
+    .container .content{
+    display: flex;
+    flex-direction: column;
+}
+.container .content .part_2 img{
+    margin-top:40px;
+    margin-right: 110px;
+    width:100%;
+    max-width:620px;
+}
+.container .header a{
+    visibility: hidden;
+}
+}
+@media screen and (min-width:850px) {
+    .container .content .part_2 img{
+        margin-top:40px;
+        margin-right:110px;
+        width:120%;
+        max-width:650px;
+        
+        
+       
+    }
+
+
+}
+
+.signature{
+    font-family: "Cedarville Cursive", cursive;
+    float:right;
+    position: relative;
+    bottom:51px;
+    left:90px;
+    font-style: italic;
+    color: black;
+    text-decoration: underline;
+}
